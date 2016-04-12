@@ -18,7 +18,7 @@
 
     function signUp(formModel) {
       if(formModel.$valid) {
-        authService.signUp(self.viewModel).then(function() {
+        authService.signUp(self.viewModel).then(function(isSuccess) {
           
         });
       } else {

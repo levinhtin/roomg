@@ -9,7 +9,9 @@
   function authService($q, $localStorage) {
     this.signUp = signUp;
     var $storage = $localStorage;
-    $storage.users = [];
+    if(!$storage.users) {
+      $storage.users = [];
+    }
     ////////////////
 
     function signUp(signUpModel) {
@@ -18,7 +20,7 @@
         var users = $storage.users;
         var i = 0
         for(i; i < users.length; i++) {
-          if(user[i].username === signUpModel.username || user[i].email === signUpModel.email) {
+          if(users[i].username === signUpModel.username || users[i].email === signUpModel.email) {
             break;
           }
         }
