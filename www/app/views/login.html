@@ -8,16 +8,16 @@
       </div>
 
     <ion-content class="p-login-signup">
-      <form name="signUp" ng-submit="authCtrl.signUp(signUp)" novalidate="">
+      <form name="login" ng-submit="loginCtrl.login(login)" novalidate>
         <div class="form-center form-signup">
           <h3 class="title">Login with account</h3>
 
           <div class="list list-inset">
             <label class="item item-input">
-              <input type="text" placeholder="Username">
+              <input type="text" placeholder="Username" name="username" ng-trim="true" ng-model="loginCtrl.loginModel.username" required>
             </label>
             <label class="item item-input">
-              <input type="password" placeholder="Password">
+              <input type="password" placeholder="Password" name="password" ng-trim="true" ng-model="loginCtrl.loginModel.password" required>
             </label>
             <button class="button button-block button-positive">Login</button>
           </div>

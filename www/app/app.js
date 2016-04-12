@@ -53,4 +53,10 @@ function config($provide, $stateProvider, $urlRouterProvider, $locationProvider)
     controller: 'LoginController',
     controllerAs: 'loginCtrl'
   })
+  .state('home.main', {
+    url: '/main',
+    templateUrl: 'app/views/main.html',
+    controller: 'MainController',
+    controllerAs: 'mainCtrl'
+  })
 }

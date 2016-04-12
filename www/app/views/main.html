@@ -1,0 +1,34 @@
+<ion-side-menus>
+
+  <!-- Center content -->
+  <ion-side-menu-content>
+    <div class="bar bar-header bar-stable">
+      <h1 class="title">Todo</h1>
+    </div>
+    <div class="bar bar-subheader">
+      <h2 class="title">Sub Header</h2>
+    </div>
+    <ion-content class="has-header has-subheader has-footer">
+      <div class="main-content">
+        <ul>
+          <li ng-repeat="n in [0,1,2,3,4,5,6,7,8,9]">
+            <div class="room-thumb">
+              <img src="img/room.jpg" height="280" width="100%"/>
+              <span class="room-price">1,250$</span>
+            </div>
+            <div class="sub-info">
+              <span class="item-info info-calendar"><i class="ion-calendar"></i> 04/03/2016</span>
+              <span class="item-info info-location"><i class="ion-location"></i> Da Nang</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </ion-content>
+    <div class="bar bar-footer">
+      <button class="button button-clear">Left</button>
+      <div class="title">Title</div>
+      <button class="button button-clear">Right</button>
+    </div>
+  </ion-side-menu-content>
+
+</ion-side-menus>

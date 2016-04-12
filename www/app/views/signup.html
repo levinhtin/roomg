@@ -11,16 +11,16 @@
       <form name="signUp" ng-submit="signupCtrl.signUp(signUp)" novalidate="">
         <div class="form-center form-signup">
           <h3 class="title">New Account</h3>
-
+          <h4>{{signUpCtrl.message}}</h4>
           <div class="list list-inset">
             <label class="item item-input">
               <input type="text" name="username" placeholder="Username" ng-model="signupCtrl.viewModel.username" required ng-trim="true" ng-minlength="2" maxlength="20" ng-pattern="/^[a-zA-Z 0-9áàảãạăắằẳẵặâấầẩẫậđéèẻẽẹêếềểễệíìỉĩịóòỏõọôốồổỗộơớờởỡợúùủũụưứừửựýỳỷỹỵÁÀẢÃẠĂẮẰẲẴẶÂẤẦẨẪẬĐÉÈẺẼẸÊẾỀỂỄỆÍÌỈĨỊÓÒỎÕỌÔỐỒỔỖỘƠỚỜỞỠỢÚÙỦŨỤƯỨỪỬỰÝỲỶỸỴ]*$/">
             </label>
             <label class="item item-input">
-              <input type="text" name="email" placeholder="Email" ng-model="signupCtrl.viewModel.email" required>
+              <input type="text" name="email" placeholder="Email" ng-model="signupCtrl.viewModel.email" ng-trim="true" required>
             </label>
             <label class="item item-input">
-              <input type="password" name="password" placeholder="Password" ng-model="signupCtrl.viewModel.password" required>
+              <input type="password" name="password" placeholder="Password" ng-model="signupCtrl.viewModel.password" ng-trim="true" required>
             </label>
             <button class="button button-block button-positive" type="submit">Register</button>
           </div>

@@ -5,9 +5,10 @@
     .module('roomG')
     .controller('SignUpController', SignUpController);
 
-  SignUpController.$inject = ['authService'];
-  function SignUpController(authService) {
+  SignUpController.$inject = ['authService', '$state'];
+  function SignUpController(authService, $state) {
     var self = this;
+    self.message = '';
     self.viewModel = {
       username: '',
       email: '',
@@ -19,6 +20,20 @@
     function signUp(formModel) {
       if(formModel.$valid) {
         authService.signUp(self.viewModel).then(function(isSuccess) {
+          if(isSuccess) {
+            var loginModel = {
+              username: formModel.username,
+              password: formModel.password
+            };
+            authService.login(loginModel).then(function(success) {
+              if(success) {
+                $state.go('home.main');
+              }
+            });
+          } else {
+            self.message = 'Username or email is exsit!';
+          }
+        }, function() {
           
         });
       } else {

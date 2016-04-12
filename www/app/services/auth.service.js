@@ -8,6 +8,7 @@
   authService.$inject = ['$q', '$localStorage'];
   function authService($q, $localStorage) {
     this.signUp = signUp;
+    this.login = login; 
     var $storage = $localStorage;
     if(!$storage.users) {
       $storage.users = [];
@@ -38,18 +39,21 @@
 
     function login(userLoginModel) {
       var defer = $q.defer();
-      if(signUpModel) {
+      if(userLoginModel) {
         var users = $storage.users;
         var i = 0;
         for(i; i < users.length; i++) {
-          if(users[i].username == userLoginModel.username && users[i].password === userLoginModel.password) {
+          var user = users[i];
+          console.log(user);
+          if(user.username == userLoginModel.username && user.password == userLoginModel.password) {
             break;
           }
         }
         if(i === users.length) {
-          
+          defer.resolve(false);
+        } else {
+          defer.resolve(true);
         }
-        defer.resolve();
       } else {
         defer.reject();
       }
