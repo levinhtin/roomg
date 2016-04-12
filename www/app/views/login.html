@@ -1,0 +1,30 @@
+<ion-side-menus>
+  <!-- Center content -->
+  <ion-side-menu-content>
+
+      <div class="bar bar-header bar-dark">
+        <a ui-sref="home.starter" class="button icon-left ion-chevron-left button-clear"></a>
+        <h1 class="title">Login</h1>
+      </div>
+
+    <ion-content class="p-login-signup">
+      <form name="signUp" ng-submit="authCtrl.signUp(signUp)" novalidate="">
+        <div class="form-center form-signup">
+          <h3 class="title">Login with account</h3>
+
+          <div class="list list-inset">
+            <label class="item item-input">
+              <input type="text" placeholder="Username">
+            </label>
+            <label class="item item-input">
+              <input type="password" placeholder="Password">
+            </label>
+            <button class="button button-block button-positive">Login</button>
+          </div>
+          <p class="text-1 text-center">You dont have account? <a ui-sref="home.signup" class="btn-signin">Sign up</a> now</p>
+        </div>
+      </form>
+    </ion-content>
+  </ion-side-menu-content>
+
+</ion-side-menus>

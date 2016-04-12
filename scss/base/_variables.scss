@@ -1,0 +1,234 @@
+// ----------------------------------------------------------------------
+  // Paths
+// ----------------------------------------------------------------------
+$url-img: "../img";
+
+// ----------------------------------------------------------------------
+	// Layout Breakpoints
+// ----------------------------------------------------------------------
+$maxWidth: 1280px;
+$maxWidthContent: 970px;
+$maxWithElement: 375px;
+// ----------------------------------------------------------------------
+	// Font Sizes
+// ----------------------------------------------------------------------
+$regularSize: 12;
+
+
+// ----------------------------------------------------------------------
+	// Font Families
+// ----------------------------------------------------------------------
+$helvetica: Helvetica, Arial, sans-serif;
+$font-body: 'Roboto', sans-serif;
+
+$font-light: 100;
+$font-weight: 400;
+$font-bold: 700;
+// ----------------------------------------------------------------------
+  // Grid
+// ----------------------------------------------------------------------
+$grid-columns: 12;
+
+// ----------------------------------------------------------------------
+  // Padding
+// ----------------------------------------------------------------------
+$layout-padding: 5px;
+
+// ----------------------------------------------------------------------
+  // Buttons
+// ----------------------------------------------------------------------
+$btn-font-light: 100;
+$btn-font-weight: 400;
+$btn-font-bold: 700;
+$button-font-size: 16px;
+$btn-default-color: #8a8a8a;
+$btn-color-text: #fff;
+$cursor-disabled: 'not-allowed';
+
+// ----------------------------------------------------------------------
+  // Color
+// ----------------------------------------------------------------------
+$black-color: #000;
+$grey-color: #848484;
+$white-color: #fff;
+$grey-color-1: #dddddd;
+$grey-color-2: #d9d9d9;
+$grey-color-3: #757575;
+$grey-color-4: #f0f0f0;
+$grey-color-5: #cacaca;
+$grey-color-6: #f8f8f8;
+$grey-color-7: #f5fcfc;
+$grey-color-8: #9b9b91;
+$grey-color-9: #585858;
+$grey-color-10: #5d5d5d;
+$grey-color-11: #dedede;
+$grey-color-12: #212121;
+$green-color: #4caf50;
+$green-color-2: #7fd323;
+$green-color-3: #01bc77;
+$green-color-4: #50ae21;
+$orange-color: #ff5722;
+$orange-color-2: #f4a723;
+$orange-color-3: #eb980f;
+$blue-color: #165db1;
+$blue-color-2: #1d7deb;
+$blue-color-3: #00cbd1;
+$blue-color-4: #0e63c7;
+$blue-color-5: #E7F5F5;
+$grey-light-color: #b8b8ba;
+$violet-color: #d307c2;
+$violet-color-2: #6110a9;
+$pink-color: #fe0084;
+$pink-color-2: #c23a4a;
+$bg-grey-1: #4c4c4c;
+$red-color: #D0021B;
+$red-color-2: #b44700;
+$default-color: #20221f;
+$border-color : #e1e1e1;
+$success-color : #4cb050;
+$error-color : #9f0f0e;
+$text-dark-color: #212121;
+$no-active-header: #27612e;
+$text-dark-color-2: #4a4a4a;
+
+  //---------------------------------------------------
+    // color icon menu
+  //---------------------------------------------------
+  $menu-green-hue-color: #00c0a4;
+  $menu-orange-color: #f5a623;
+  $menu-orange-color-2: #ff7301;
+  $menu-pink-color: #e0107b;
+  $menu-blue-color: #1387fe;
+  $menu-violet-color: #8300c7;
+  $menu-green-color: #4caf50;
+  $menu-grey-color: #848484;
+
+// ----------------------------------------------------------------------
+  // Inputs
+// ----------------------------------------------------------------------
+$color-placehoder: #585858;
+
+
+// ----------------------------------------------------------------------
+  // Photo Avatar & Cover
+// ----------------------------------------------------------------------
+$width-avatar: 100px;
+$height-avatar: 100px;
+$height-cover: 182px;
+
+// ----------------------------------------------------------------------
+  // Height Element
+// ----------------------------------------------------------------------
+$height-header: 46px;
+$height-subheader: 42px;
+$height-subheader-scroll: 56px;
+$height-footer: 50px;
+
+// ----------------------------------------------------------------------
+  // Z-index
+// ----------------------------------------------------------------------
+$z-header: 115;
+//-----------------------------------------------------------------------
+// image link
+//-----------------------------------------------------------------------
+
+$image-url: "../images" !default;
+
+// ----------------------------------------------------------------------
+  // Popup Photo - pp
+// ----------------------------------------------------------------------
+$pp-text-color: #b6b6b6;
+
+// ----------------------------------------------------------------------
+  // item card - ic
+// ----------------------------------------------------------------------
+$ic-stt-color: #9b9b9b;
+$ic-text-color: #585858;
+
+//---------------------------------------------------
+    // color add photo
+//---------------------------------------------------
+  $addphoto-green-color: #4cb050;
+  $addphoto-grey-color-1: #dcdcdc;
+  $addphoto-grey-color-2: #8c8c8c;
+  $addphoto-grey-color-3: #a79b9b;
+  $addphoto-grey-color-4: #bbb;
+
+// ----------------------------------------------------------------------
+  // Module add article
+// ----------------------------------------------------------------------
+$color-user-icon: #b6b6b6;
+$color-user-name: #212121;
+$color-bg-upload: #d9d9d9;
+$padding-side-body: 15px;
+$color-textarea-placeholder: #727272;
+$color-text-back: #9b9b9b;
+// ----------------------------------------------------------------------
+  // size of photo avatar
+// ----------------------------------------------------------------------
+$avatar-width: 98px;
+$avatar-height: 98px;
+
+// ----------------------------------------------------------------------
+  // Module user profile
+// ----------------------------------------------------------------------
+$height-block-userinfo: 109px;
+$user-height-tab: 50px;
+$height-user-cover: 182px;
+
+//-----------------------------------------------------------
+	// message
+//-----------------------------------------------------------
+$color-mess-grey: #727272;
+$color-mess-grey-2: #9ba3c4;
+$color-mess-grey-3: #585858;
+$color-mess-grey-4: #bbb;
+$color-mess-online: #ff5722;
+$color-heighlight: #f2f7ff;
+$color-green: #4caf50;
+$color-green-2: #27612e;
+$color-bg-mess-1: #585858;
+$color-bg-mess-2: #f3f3f3;
+$color-mess-link: #9dceff;
+
+//-----------------------------------------------------------
+  // collection - cl
+//-----------------------------------------------------------
+
+$cl-color-grey: #eee;
+//-----------------------------------------------------------
+  //table
+//-----------------------------------------------------------
+$border-color-table-green:#dceaea;
+
+$border-grey-color: #d1d1d1;
+$bg-headertable-color: #f5fcfc;
+
+// color cms-static page
+$color-border-about: #4cb050;
+$color-border-grey-cms: $border-color;
+$color-bg-about: #edffde;
+$color-right-arrow: #727272;
+$color-title:  #4caf50;
+$color-org-title: #ff5722;
+$color-link-cms: #4cb050;
+$color-link-cms-hover: #ff5722;
+$color-bg-violet-cms:#eff2ff;
+$color-border-violet-cms:#c6cadd;
+
+$color-ppcomment-bghead: #fff;
+$color-ppcomment-icon-liked: #727272;
+$color-ppcm-grey: #757575;
+
+// color noresult
+$color-noresult-df: #4a4a4a;
+$bgcl-noconnect: #2f2f2f;
+$color-getapp: #d8d8d8;
+
+//map
+$icon-map-grey: #727272;
+
+// color button
+$color-border-grey : #b6b6b6;
+$color-text-grey: #212121;
+$color-text-grey-light: #848484;

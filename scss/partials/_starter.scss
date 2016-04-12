@@ -1,0 +1,34 @@
+.starter.container {
+    background-image: url("../img/find-roommate.png");
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.starter .logo {
+    display: block;
+    font-size: 3.8em;
+    font-family: cursive;
+    padding: 20px 0;
+}
+.start-main {
+  position: relative;
+  top: 6%;
+  left: 0;
+  height: 80%;
+}
+.text-center {
+  text-align: center;
+}
+
+.start-now {
+  font-size: 1.3em;
+}
+.sub-start {
+    position: relative;
+    top: 70%;
+}
+.starter a {
+  color: #fff;
+}

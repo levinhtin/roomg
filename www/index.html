@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html ng-app="roomG" >
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+
+    <!-- compiled css output -->
+    <link href="css/ionic.app.css" rel="stylesheet">
+
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+
+    <script src="lib/ngstorage/ngStorage.js"></script>
+    <!-- your app's js -->
+    <script src="app/app.js"></script>
+    <script src="app/services/auth.service.js"></script>
+    <script src="app/controllers/home.controller.js"></script>
+    <script src="app/controllers/starter.controller.js"></script>
+    <script src="app/controllers/signup.controller.js"></script>
+    <script src="app/controllers/login.controller.js"></script>
+  </head>
+  <body>
+    <ui-view></ui-view>
+  </body>
+</html>
